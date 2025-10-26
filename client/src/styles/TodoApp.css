@@ -1,0 +1,327 @@
+/* ==================== Page Wrapper ==================== */
+.page-wrapper {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Inter", sans-serif;
+}
+
+/* ==================== Headers ==================== */
+.challenge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.challenge-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1e293b;
+}
+
+.difficulty {
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.difficulty.easy {
+  background-color: #10b981;
+}
+.difficulty.medium {
+  background-color: #f59e0b;
+}
+.difficulty.hard {
+  background-color: #6366f1;
+}
+
+/* ==================== Todo Stats ==================== */
+.todo-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stat-card {
+  flex: 1;
+  text-align: center;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* ==================== Controls ==================== */
+.todo-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.todo-search,
+.todo-filter {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+.todo-add-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.todo-add-btn:hover {
+  background: #4f46e5;
+}
+
+/* ==================== Todo List ==================== */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.todo-checkbox {
+  margin-top: 0.3rem;
+}
+
+.todo-content {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.todo-title.completed {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.todo-description {
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.todo-description.completed {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.todo-delete-btn {
+  background: #f87171;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.todo-delete-btn:hover {
+  background: #dc2626;
+}
+
+.empty-state {
+  text-align: center;
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.clear-completed-btn {
+  margin-top: 1rem;
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.clear-completed-btn:hover {
+  background: #d97706;
+}
+
+/* ==================== Forms (Add / Detail) ==================== */
+.form-container,
+.detail-container {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.form-container h2,
+.detail-container h2 {
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+  font-size: 1.3rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+.form-input,
+.detail-input,
+.form-textarea,
+.detail-textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus,
+.detail-input:focus,
+.form-textarea:focus,
+.detail-textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  outline: none;
+}
+
+/* Priority Buttons */
+.priority-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.priority-btn {
+  flex: 1;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.priority-btn:hover {
+  background: #e2e8f0;
+}
+
+.priority-btn.active {
+  background: #6366f1;
+  color: white;
+  border-color: #4f46e5;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.submit-btn {
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #059669;
+}
+
+.cancel-btn {
+  background: #f87171;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.cancel-btn:hover {
+  background: #dc2626;
+}
+
+/* Detail Header */
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.delete-btn-header {
+  background: #f87171;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-btn-header:hover {
+  background: #dc2626;
+}
+
+/* Error state */
+v vc .error-container {
+  text-align: center;
+  padding: 2rem;
+  color: #f87171;
+}

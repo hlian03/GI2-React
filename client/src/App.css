@@ -1,0 +1,24 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #36609f;
+  color: #333;
+}
+
+.link-button {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #c89975;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.link-button:hover {
+  background-color: #a7df8f;
+}
